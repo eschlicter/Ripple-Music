@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
+import './../App.css';
 
 class Album extends Component {
   constructor(props) {
@@ -126,7 +127,7 @@ class Album extends Component {
            <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
             <td className="song-number">{index+1}</td>
             <td className="song-title">{song.title}</td>
-            <td className="song-duration">{song.duration}</td>
+            
             <td className="ion-play"></td>
             <td className="ion-pause"></td>
            </tr>
