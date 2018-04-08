@@ -132,6 +132,7 @@ import './../App.css';
                 <col id="song-title-column" />
                 <col id="song-duration-column" />
               </colgroup>
+
               <tbody>
               {
                 this.state.album.songs.map( (song, index) =>
@@ -170,7 +171,7 @@ import './../App.css';
             handleTimeChange={(e)=> this.handleTimeChange(e)}
             handleVolumeChange={(e) => this.handleVolumeChange(e)}
             formatTime={this.formatTime(this.state.currentTime)}
-            
+
          />
        </section>
 

@@ -1,31 +1,16 @@
 
 body{
-  background-image: url("luca-bravo-207056-unsplash.jpg");
+
+  background-image: url("");
   background-repeat: no-repeat;
-  position: relative;
-  width: 85%;
-  height:auto;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
 
 }
 
-a:link,
-#links {
-  text-align: center;
-  font-size: 36px;
-  color: blue;
-  text-decoration: none;
-}
-
-h1#title {
-  text-align: center;
-  font-size: 48px;
-  text-decoration: underline;
-  color: rgba(209, 36, 36, 1);
-}
-
 h1.hero-title{
+
   font-size: 48px;
   text-decoration: underline;
   text-align: center;
@@ -33,7 +18,6 @@ h1.hero-title{
 }
 
 h2 {
-  text-decoration: underline;
   font-size: 36px;
   text-align: center;
   color: aqua;
@@ -46,7 +30,6 @@ p {
 
 .player-bar {
   background: black;
-  bottom: 1;
   height: 100px;
   width: 100%;
 }
@@ -73,7 +56,7 @@ p {
 #buttons button {
   border: none;
   background: none;
-  color: white;
+  color: black;
   font-size: 1.2rem;
   color: hsla(0, 0%, 100%, 0.5);
   transition: all 0.2s ease;
@@ -82,26 +65,12 @@ p {
 
 #buttons button:hover, #buttons button:focus {
   outline: none;
-  color: hsla(256, 99%, 33%, 1);
-  text-shadow: 2px 4px 3px hsla(0,0%,0%,0.25);
+  color: white;
 }
 
 #buttons #play-pause {
-  color: hsla(0, 0%, 100%, 0.8);
   font-size: 2rem;
   margin: 0.5rem 1rem 0;
-}
-
-#buttons #play-pause:hover {
-  color: hsla(0, 0%, 100%, 1);
-}
-
-#play-pause[playState="playing"] .ion-pause {
-  display: block;
-}
-
-#play-pause[playState="playing"] .ion-pause {
-  display: block;
 }
 
 #song-duration{
@@ -115,15 +84,52 @@ p {
 
 #time-control {
   margin: 0.5rem auto;
-  /* max-width: 640px; */
-  width: 50%;
+  width: 45%;
+}
+.music-up {
+    position: static;
+    display: block;
+    top: 55%;
+    right: 0px;
+    left: 70%;
+    line-height: 20px;
+    font-size: 36px;
+    font-family: AvenirNext-bold;
+}
+.company-name {
+  text-align: center;
+}
+
+.point1, .point2, .point3 {
+    letter-spacing: 0.25px;
+    width: 33%;
+    float: left;
+    text-align: center;
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 33%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.point1-title, .point2-title, .point3-title {
+    font-family: AvenirNext-Bold;
+    font-size: 20px;
+    color: #5E5E5E;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 
 #time-control div,
 #volume-control div {
   font-size: 0.8rem;
   color: hsla(0, 0%, 100%, 0.4);
-  width: 35px;
+
   display: block;
   float: left;
   text-align: center;
@@ -146,90 +152,6 @@ p {
   width: calc(100% - 40px);
 }
 
-input[type=range] {
-  -webkit-appearance: none;
-  background: none;
-  margin-top: 7px;
-}
-input[type=range]:focus {
-  outline: none;
-  box-shadow: 2px 4px 3px hsla(0,0%,0%,0.25);
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 3px;
-  cursor: pointer;
-  box-shadow: 0px 0px 0px rgba(57, 0, 0, 0), 0px 0px 0px rgba(83, 0, 0, 0);
-  background: hsl(282, 35%, 25%);
-  border-radius: 3.4px;
-  border: 0.2px solid rgba(1, 1, 1, 0);
-}
-input[type=range]::-webkit-slider-thumb {
-  border: none;
-  height: 13px;
-  width: 13px;
-  border-radius: 50%;
-  background: hsla(289, 48%, 85%, 0.5);
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -6.5px;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: hsl(282, 35%, 25%);
-}
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 0.8px;
-  cursor: pointer;
-  background: hsl(282, 35%, 25%);
-  border-radius: 3.4px;
-  border: 0.2px solid rgba(1, 1, 1, 0);
-}
-input[type=range]::-moz-range-thumb {
-  border: 0px solid #000000;
-  height: 15px;
-  width: 15px;
-  border-radius: 50px;
-  background: hsla(289, 48%, 85%, 0.5);
-  cursor: pointer;
-}
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 0.8px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-  background: rgba(0, 0, 0, 0.4);
-  border: 0.2px solid rgba(1, 1, 1, 0);
-  border-radius: 6.8px;
-  box-shadow: 0px 0px 0px rgba(57, 0, 0, 0), 0px 0px 0px rgba(83, 0, 0, 0);
-}
-input[type=range]::-ms-fill-upper {
-  background: rgba(0, 0, 0, 0.4);
-  border: 0.2px solid rgba(1, 1, 1, 0);
-  border-radius: 6.8px;
-  box-shadow: 0px 0px 0px rgba(57, 0, 0, 0), 0px 0px 0px rgba(83, 0, 0, 0);
-}
-input[type=range]::-ms-thumb {
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  border: 0px solid #000000;
-  height: 15px;
-  width: 15px;
-  border-radius: 50px;
-  background: rgba(102, 103, 101, 0.79);
-  cursor: pointer;
-  height: 0.8px;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: rgba(0, 0, 0, 0.4);
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: rgba(13, 13, 13, 0.4);
-}
-
 #song-list {
   border-collapse: collapse;
   clear: both;
@@ -249,29 +171,8 @@ input[type=range]:focus::-ms-fill-upper {
 
 tr {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
-  background: hsla(0, 0%, 0%, 0.01);
+  background: hsla(0, 0%, 0%, 0.05);
   transition: all 0.2s ease;
-}
-
-tr:focus {
-  outline: aliceblue;
-}
-
-tr:hover .ion-play,
-tr.playing .ion-pause,
-tr:nth-child(0).paused .ion-play,
-td:active .ion-pause {
-  display: block;
-}
-
-tr .ion-play,
-tr .ion-pause,
-tr:hover .song-number,
-td.playing .ion-play,
-tr.playing .song-number,
-tr.playing .ion-play,
-td.paused .song-number {
-  display: none;
 }
 
 tr:hover .song-title {
@@ -290,33 +191,11 @@ tr button {
   border: none;
   background: none;
   color: white;
-  cursor: pointer;
-  padding: 0;
 }
 
-tr button:focus {
-  outline: none;
-  text-shadow: 2px 4px 3px hsla(0,0%,0%,0.25);
-}
-
-tr button:focus .song-number {
-  display: none;
-}
-tr button:focus .ion-play {
-  display: block;
-}
-
-tr.playing button:focus .song-number,
-tr.playing button:focus .ion-play {
-  display: none;
-
-}
-tr.playing button:focus .ion-pause {
-  display: block;
-}
 
 .song-number {
-  color: white;
+  color: black;
 }
 
 .song-title {
@@ -328,8 +207,6 @@ tr.playing button:focus .ion-pause {
   text-align: right;
 }
 
-
-
 html {
   font-size: 16px;
 }
@@ -338,7 +215,7 @@ main {
   width: 100%;
   max-width: 800px;
   margin: 4rem auto 150px;
-  padding: 0 1rem;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
@@ -347,22 +224,14 @@ main {
   color: black;
 }
 
-#album-cover-art {
-  float: center;
-  margin-right: 2rem;
-  position: relative;
-  width: 250px;
-  max-width: 33%;
-}
-
 #album-title {
   font-size: 2.5rem;
+  font-weight: lighter;
 }
 
 h2.artist {
-  font-weight: 100;
-  font-size: 1rem;
-  margin: 0.5rem;
+  font-weight: lighter;
+  font-size: 1.25rem;
   opacity: 0.9;
   color: black;
   text-align: left;
@@ -370,7 +239,7 @@ h2.artist {
 
 #release-info {
   opacity: 0.5;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 
 @keyframes App-logo-spin {
