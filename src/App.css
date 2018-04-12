@@ -27,7 +27,10 @@ p {
   text-align: center;
   color: orange;
 }
-
+.library{
+  text-align: center;
+  
+}
 .player-bar {
   background: black;
   height: 100px;
