@@ -164,6 +164,7 @@ import './../App.css';
             currentSong={this.state.currentSong}
             currentTime={this.audioElement.currentTime}
             currentVolume={this.audioElement.currentVolume}
+            duration={this.audioElement.duration}
             volumePercent={this.state.volumePercent}
             handleSongClick={() => this.handleSongClick(this.state.currentSong)}
             handlePrevClick={() => this.handlePrevClick()}
