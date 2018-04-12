@@ -28,7 +28,7 @@ import './../App.css';
      this.audioElement.src = album.songs[0].audioSrc;
    }
 
-     componentDidMount(){
+   componentDidMount(){
          this.eventListeners = {
              timeupdate: e => {
                  this.setState({ currentTime: this.audioElement.currentTime });
