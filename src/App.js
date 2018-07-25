@@ -15,7 +15,7 @@ class App extends Component {
           <Link to='/' style={{ textDecoration:'none', color: '#8E8D8E'}}> Landing </Link>
           <Link to='/library'> Library </Link>
         </nav>
-          <h1 className="company-name">New Wave Music</h1>
+          <h1 className="company-name">Ripple Music</h1>
         </header>
         <main>
           <Route exact path="/" component={Landing} />
