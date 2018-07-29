@@ -63,20 +63,20 @@ import './../App.css';
          this.setState({ isPlaying: false })
      }
 
-       setSong(song) {
-           this.audioElement.src = song.audioSrc;
-           this.setState({ currentSong: song });
-       }
+     setSong(song) {
+         this.audioElement.src = song.audioSrc;
+         this.setState({ currentSong: song });
+     }
 
-       handleSongClick(song){
-           const isSameSong = this.state.currentSong === song;
-           if (this.state.isPlaying && isSameSong) {
-               this.pause();
-           } else {
-               if (!isSameSong) { this.setSong(song); }
-               this.play();
-           }
-           }
+     handleSongClick(song){
+         const isSameSong = this.state.currentSong === song;
+         if (this.state.isPlaying && isSameSong) {
+             this.pause();
+         } else {
+             if (!isSameSong) { this.setSong(song); }
+             this.play();
+         }
+      }
 
      handlePrevClick(){
          const currentIndex = this.state.album.songs.findIndex(song => this.state.currentSong === song);

@@ -20,7 +20,7 @@ h1.hero-title{
 h2 {
   font-size: 36px;
   text-align: center;
-  color: aqua;
+  color: teal;
 }
 
 p {
@@ -29,7 +29,7 @@ p {
 }
 .library{
   text-align: center;
-  
+
 }
 .player-bar {
   background: black;
@@ -153,6 +153,10 @@ p {
 #volume-control input {
   float: left;
   width: calc(100% - 40px);
+}
+#album-cover-art {
+  align-items: center;
+  overflow: hidden;
 }
 
 #song-list {
